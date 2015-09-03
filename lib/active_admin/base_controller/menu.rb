@@ -11,6 +11,7 @@ module ActiveAdmin
       protected
 
       def current_menu
+        Rails.logger.debug { "AA: #{active_admin_config.inspect}" }
         active_admin_config.navigation_menu
       end
 
